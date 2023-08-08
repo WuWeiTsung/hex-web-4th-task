@@ -1,0 +1,164 @@
+.blogHeader {
+    background: #650300;
+    padding: 13px 0;
+    margin-bottom: 16px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+
+        li {
+            margin-right: 48px;
+        }
+
+    }
+
+    span {
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
+.blogContent {
+    padding: 80px 0;
+    color: #000000;
+
+    h1 {
+        color: #000000;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 32px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        img {
+            max-width: 636px;
+        }
+
+        .cardBody {
+            max-width: 636px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 32px;
+                color: #650300;
+            }
+
+            .info {
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: space-between;
+
+                .date {
+                    opacity: 0.7;
+                }
+            }
+
+            .more {
+                text-align: end;
+
+                a {
+                    color: #650300;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+// paginator的scss在_seriesQptical.scss中
+
+
+@media(max-width:992px) {
+    .blogContent {
+        padding: 80px 36px;
+
+        .card {
+            margin-bottom: 24px;
+
+            img {
+                max-width: 336px;
+            }
+
+            .cardBody {
+                max-width: 336px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                .info {
+                    margin-bottom: 4px;
+
+                    .name {
+                        font-size: 16px;
+                    }
+
+                }
+
+                .text {
+                    color: #555555;
+                    font-size: 16px;
+                    //超過6行省略字，改用...結尾。
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 6;
+                    overflow: hidden;
+                }
+
+            }
+
+            .more {
+                display: none;
+            }
+
+        }
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .blogHeader {
+        display: none;
+    }
+
+    .blogContent {
+        padding: 40px 13px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            flex-direction: column;
+
+            img {
+                max-width: 348px;
+            }
+
+            .cardBody {
+                margin-top: 8px;
+
+                .text {
+                    display: none;
+
+                }
+            }
+
+        }
+
+
+    }
+}

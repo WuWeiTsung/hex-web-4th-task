@@ -1,0 +1,429 @@
+.banner {
+  background-image: url(/assets/images/home-header.png);
+  padding: 296px 0;
+  background-size: cover;
+
+  h3 {
+    text-align: end;
+  }
+
+  h1 {
+    text-align: end;
+    margin-bottom: 4px;
+  }
+
+  a {
+    padding: 6px 12px;
+    background: #AA0601;
+    width: 88px;
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.professional {
+  padding: 80px 0;
+  background: #FBF2F2;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      max-width: 306px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 84px;
+        margin-bottom: 24px;
+      }
+
+      h4 {
+        margin-bottom: 8px;
+      }
+      p {
+        color:#000;
+      }
+    }
+  }
+}
+
+.classic {
+  padding: 80px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      max-width: 416px;
+
+      h2 {
+        color: #AA0601;
+        font-weight: 900;
+        font-style: italic;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.design {
+  padding: 80px 0;
+  background-image: url(/assets/images/index-bg.png);
+
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      max-width: 50%;
+
+      h2 {
+        color: #AA0601;
+        font-weight: 900;
+        font-style: italic;
+        padding: 8px 0;
+        background: #ffffff;
+        margin-bottom: 0;
+        outline: 1px solid #DEE2E6;
+      }
+    }
+  }
+}
+
+.recommend {
+  padding: 80px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      max-width: 306px;
+
+      .content {
+        padding: 16px;
+        min-height: 205px;
+        color: #000;
+        border: 1px solid #DEE2E6;
+        box-shadow: 0px 2px 6px #00000029;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name {
+          margin-bottom: 8px;
+        }
+
+        .date {
+          font-size: 14px;
+          color: #707070;
+        }
+      }
+    }
+  }
+}
+
+.contactUs {
+  padding: 80px 0;
+  background: #FBF2F2;
+  color: #000;
+
+
+  .container {
+    max-width: 660px;
+
+    h2 {
+      color: #650300;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    h5 {
+      margin-bottom: 24px;
+    }
+
+    input {
+      width: 100%;
+      padding: 6px 12px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 6px 12px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .check {
+      margin: 0;
+      padding: 0;
+      width: 24px;
+      height: 16px;
+    }
+
+    button {
+      padding: 16px 176px;
+      background: #AA0601;
+      border: none;
+      color: #ffffff;
+      display: block;
+      margin: 48px auto 0 auto;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media(max-width:992px) {
+  .banner{
+    background-image: url(/assets/images/home-header-sm.png);
+  }
+
+  .professional{
+    .cards{
+      flex-wrap: wrap;
+      .card{
+        &:first-child{
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  .classic {
+    .cards{
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .design{
+    background-image: url(/assets/images/index-bg-md.png);
+    background-size: cover;
+
+    .cards{
+      flex-direction: column;
+      align-items: center;
+
+      .card{
+        max-width: 696px;
+        &:first-child{
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+  
+  .recommend{
+    .cards{
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .card{
+        max-width: 336px;
+        &:first-child{
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+  }
+
+  .contactUs{
+    .container{
+      max-width: 576px;
+      padding: 0;
+    }
+
+    h5{
+      font-size: 16px;
+    }
+  }
+
+}
+
+@media(max-width:767px) {
+
+  .banner{
+    max-height: 396px;
+    h3{
+      font-size: 16px;
+    }
+
+    h1{
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    a{
+      padding: 5px 12px;
+      font-size: 20px;
+      width: 104px;
+    }
+
+  }
+
+  .professional{
+    padding: 40px 12px;
+
+    h2{
+      font-size: 24px;
+    }
+
+    .cards{
+      max-width: 348px;
+      flex-direction: column;
+      align-items: center;
+
+      .card{
+        margin-bottom: 32px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+
+  }
+
+  .classic{
+    padding: 40px 12px;
+
+    h2{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    .card{
+      max-width: 348px;
+      h2{
+        font-size: 48px;
+      }
+    }
+
+  }
+
+  .design{
+    padding: 40px 0;
+    background-image: url(/assets/images/index-bg-sm.png);
+    background-size: cover;
+
+    h2{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    .card{
+      max-width: 348px;
+      .img1{
+        background-image: url(/assets/images/home-section4-1-sm.png);
+        background-size: cover;
+        width: 348px;
+        height: 240px;
+      }
+
+      .img2{
+        background-image: url(/assets/images/home-section4-2-sm.png);
+        background-size: cover;
+        width: 348px;
+        height: 240px;
+      }
+      img{
+        display: none;        
+      }
+
+      h2{
+        font-size: 48px;
+      }
+    }
+  }
+
+  .recommend{
+    padding: 40px 12px;
+
+    h2{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    .cards{
+      .card{
+        max-width: 348px;
+        margin-bottom: 16px;
+        &:first-child {
+          margin-bottom: 16px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+      }
+    }   
+  }
+
+  .contactUs{
+    padding: 40px 12px;
+
+    .container{
+      max-width: 348px;
+
+      h2{
+      font-size: 24px;
+      margin-bottom: 24px;
+      }
+
+      .checkArea{
+        display: flex;
+        .check{
+          margin-top: 5px;
+          margin-right: 4px;       
+        }
+        .agree{
+          max-width: 320px;
+        }
+      }
+
+      button{
+        padding: 16px 142px;
+        margin: 24px auto 0 auto;
+      }
+
+    }
+
+    
+  }
+
+}

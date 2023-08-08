@@ -1,0 +1,220 @@
+.opticalHeader {
+    color: #000;
+    font-size: 32px;
+
+    .menu {
+        display: flex;
+
+        .optical {
+            border-bottom: 8px solid #AA0601;
+        }
+
+        li {
+            width: 33.33%;
+            padding: 24px;
+            border-left: 1px solid #DCDCDC;
+            border-right: 1px solid #DCDCDC;
+            text-align: center;
+
+            a {
+                color: #000;
+                padding: 24px;
+            }
+        }
+    }
+
+}
+
+.opticalBanner {
+    display: flex;
+
+    .img1 {
+        width: 1296px;
+        height: 296px;
+        background-image: url(/assets/images/product-header-1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .img2 {
+        width: 1296px;
+        height: 296px;
+        background-image: url(/assets/images/product-header-2.png);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.opticalContent {
+    padding-top: 80px;
+    color: #000;
+
+    h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            max-width: 306px;
+            font-size: 24px;
+            margin-bottom: 80px;
+            cursor: pointer;
+
+            .cardContent {
+                display: flex;
+                justify-content: space-between;
+
+                .price {
+                    color: #AA0601;
+                }
+            }
+
+            .colors {
+                display: flex;
+
+                .color1 {
+                    width: 24px;
+                    height: 24px;
+                    background: #5F3E2D;
+                    border-radius: 4px;
+                    margin-right: 8px;
+                }
+
+                .color2 {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 4px;
+                    background: #B75929;
+                }
+            }
+
+        }
+    }
+
+}
+
+.paginator {
+    margin-bottom: 80px;
+    font-size: 24px;
+
+    .pagi {
+        display: flex;
+        justify-content: center;
+
+        li {
+            padding: 12px 16px;
+            border: 1px solid #555555;
+
+            &:hover {
+                background: #F2F2F2;
+            }
+        }
+
+        a {
+            color: #555555;
+        }
+
+        .nowPage {
+            color: #fff;
+            background: #000;
+
+            &:hover {
+                color: #fff;
+                background: #000;
+            }
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .opticalHeader {
+        font-size: 24px;
+
+        .menu {
+            li {
+                padding: 16px;
+            }
+        }
+    }
+
+    .opticalBanner {
+        .img1 {
+            background-image: url(/assets/images/product-header-sm-1.png);
+        }
+
+        .img2 {
+            background-image: url(/assets/images/product-header-sm-2.png);
+        }
+    }
+
+    .opticalContent {
+        .menu {
+            justify-content: space-around;
+
+            .card {
+                max-width: 336px;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+
+    .opticalHeader {
+        font-size: 16px;
+
+        .menu {
+            li {
+                padding: 16px 0;
+
+                a {
+                    padding: 16px 0;
+                }
+            }
+        }
+    }
+
+    .opticalContent {
+        padding-top: 40px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .menu {
+            .card {
+                max-width: 348px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .paginator {
+        margin-top: 40px;
+        margin-bottom: 64px;
+        font-size: 16px;
+
+        .pagi {
+            li {
+                padding: 12px;
+            }
+        }
+    }
+
+}

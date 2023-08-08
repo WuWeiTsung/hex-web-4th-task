@@ -1,0 +1,19 @@
+//載入字型
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
+
+//載入css reset
+@import './base/reset';
+
+//載入常用參數設定
+@import './utils/varibles';
+
+//載入layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+//載入各分頁
+@import './pages/index.scss';
+@import './pages/seriesOptical';
+@import './pages/qa';
+@import './pages/location';
+@import './pages/blog'
